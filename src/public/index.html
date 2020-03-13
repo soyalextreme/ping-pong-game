@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Game</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      background-color: #2a385e;
+    }
+    p {
+      font-family: "Rajdhani", sans-serif;
+      color: white;
+    }
+    small {
+      color: white;
+      font-family: "Rajdhani", sans-serif;
+    }
+    canvas {
+      position: fixed;
+      left: 10%;
+    }
+    a {
+      font-family: "Rajdhani", sans-serif;
+      color: palevioletred;
+    }
+    aside {
+      float: right;
+      margin-right: 200;
+      text-align: center;
+      margin-top: -10;
+      background-color: palevioletred;
+      border-radius: 2rem;
+    }
+    h1 {
+      font-family: "Rajdhani", sans-serif;
+    }
+  </style>
+  <body>
+    <aside>
+      <p>Higher Score</p>
+      <h1 id="maxPun"></h1>
+    </aside>
+    <p>Ping Pong Game</p>
+    <small>By Alejandro Andrade</small>
+    <a href="https://github.com/soyalextreme/ping-pong-game"
+      >Código del juego</a
+    >
+    <p>Puntos:<strong id="points">00</strong></p>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+  </body>
+  <script src="./index.js"></script>
+</html>
